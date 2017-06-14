@@ -92,11 +92,13 @@ var game = {
              
                 if(game.win(game.currUser))
                 {
+                    $('.turn-text').text(game.currUser + " Wins");   
                      game.gameOver =true;
                      game.Over();
                 } 
                 else if(game.tie())
                 {
+                   $('.turn-text').text("its a tie");
                    game.gameOver =true;
                    game.Over();
                 }
